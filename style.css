@@ -1,0 +1,181 @@
+html {
+  height: 100%;
+  background: -webkit-radial-gradient(circle, #fff, #ccc);
+  background: -moz-radial-gradient(circle, #fff, #ccc);
+  background: -o-radial-gradient(circle, #fff, #ccc);
+  background: -ms-radial-gradient(circle, #fff, #ccc);
+  background: radial-gradient(circle, #fff, #ccc);
+}
+
+#container {
+  height: 425px;
+  width: 550px;
+  background-color: #9DD2EA;
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 20px 0px #009de4;
+  -moz-box-shadow: 0px 4px 20px 0px #009de4;
+  -ms-box-shadow: 0px 4px 20px 0px #009de4;
+  box-shadow: 0px 4px 20px 0px #009de4;
+  position: relative;
+}
+
+#score {
+  background-color: #F1FF92;
+  color: #888E5F;
+  padding: 11px;
+  position: absolute;
+  left: 500px;
+  -webkit-box-shadow: 0px 4px 20px 0px #9da853;
+  -moz-box-shadow: 0px 4px 20px 0px #9da853;
+  -ms-box-shadow: 0px 4px 20px 0px #9da853;
+  box-shadow: 0px 4px 20px 0px #9da853;
+}
+
+#correct {
+  position: absolute;
+  left: 260px;
+  background-color: #42e252;
+  color: #fff;
+  padding: 11px;
+  display: none;
+}
+
+#wrong {
+  position: absolute;
+  left: 250px;
+  background-color: #de481a;
+  color: #fff;
+  padding: 11px;
+  display: none;
+}
+
+#question {
+  width: 450px;
+  height: 150px;
+  margin: 50px auto 10px auto;
+  line-height: 150px;
+  background-color: #9DA0eA;
+  -webkit-box-shadow: 0px 4px 20px 0px #535aa8;
+  -moz-box-shadow: 0px 4px 20px 0px #535aa8;
+  -ms-box-shadow: 0px 4px 20px 0px #535aa8;
+  box-shadow: 0px 4px 20px 0px #535aa8;
+  font-size: 7rem;
+  text-align: center;
+  font-family: 'Bubblegum Sans', cursive, sans-serif;
+  color: #000;
+}
+
+#instruction {
+  width: 450px;
+  height: 50px;
+  background-color: #B481D9;
+  margin: 15px auto;
+  text-align: center;
+  line-height: 45px;
+  -webkit-box-shadow: 0px 4px 20px 0px #8153a8;
+  -moz-box-shadow: 0px 4px 20px 0px #8153a8;
+  -ms-box-shadow: 0px 4px 20px 0px #8153a8;
+  box-shadow: 0px 4px 20px 0px #8153a8;
+}
+
+#choices {
+  width: 450px;
+  height: 100px;
+  margin: 5px auto;
+}
+
+.box {
+  width: 85px;
+  height: 85px;
+  background-color: #fff;
+  float: left;
+  margin-right: 36px;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,.2);
+  -moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,.2);
+  -ms-box-shadow: 0px 4px 20px 0px rgba(0,0,0,.2);
+  box-shadow: 0px 4px 20px 0px rgba(0,0,0,.2);
+  text-align: center;
+  line-height: 80px;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.box:hover, #start-reset:hover {
+  background-color: #9C89F6;
+  color: #fff;
+  -webkit-box-shadow: 0px 4px 20px 0px #6B54D3;
+  -moz-box-shadow: 0px 4px 20px 0px #6B54D3;
+  -ms-box-shadow: 0px 4px 20px 0px #6B54D3;
+  box-shadow: 0px 4px 20px 0px #6B54D3;
+}
+
+.box:active, #start-reset:active {
+  -webkit-box-shadow: 0px 0px #6B54D3;
+  -moz-box-shadow: 0px 0px #6B54D3;
+  -ms-box-shadow: 0px 0px #6B54D3;
+  box-shadow: 0px 0px #6B54D3;
+  top: 4px;
+}
+
+
+#box4 {
+  margin-right: 0;
+}
+
+#start-reset {
+  width: 78px;
+  padding: 10px;
+  background-color: rgba(255,255,255, 0.5);
+  margin: 10px  auto 0 auto;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,.2);
+  -moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,.2);
+  -ms-box-shadow: 0px 4px 20px 0px rgba(0,0,0,.2);
+  box-shadow: 0px 4px 20px 0px rgba(0,0,0,.2);
+  text-align: center;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#time-remaining {
+  width: 152px;
+  padding: 10px;
+  position: absolute;
+  top: 411px;
+  left: 400px;
+  background-color: rgba(181, 235, 36, 0.8);
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,.2);
+  -moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,.2);
+  -ms-box-shadow: 0px 4px 20px 0px rgba(0,0,0,.2);
+  box-shadow: 0px 4px 20px 0px rgba(0,0,0,.2);
+  display: none;
+}
+
+#game-over {
+  height: 200px;
+  width: 500px;
+  background: linear-gradient(#F3CA6B, #F3706C);
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 100px;
+  left: 45px;
+  z-index: 2;
+  display: none;
+}
